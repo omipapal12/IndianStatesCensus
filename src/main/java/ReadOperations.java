@@ -49,10 +49,6 @@ public class ReadOperations {
     /**
      * Purpose : Check whether the delimiter entered in correct or not
      * If false, return Customized Exception
-     *
-     * @param filePath
-     * @param delimiter
-     * @return
      */
     public boolean readDelimiter(String filePath, String delimiter) throws IOException {
         Scanner input = new Scanner(Paths.get(filePath));
@@ -76,9 +72,6 @@ public class ReadOperations {
     /**
      * Purpose : Check whether the header matches correctly or not
      * If false, return Customized Exception
-     *
-     * @param filePath
-     * @param stringName
      */
     public boolean readHeader(String filePath, List<String> stringName) throws IOException, StateSensorAnalysisException {
         BufferedReader br = new BufferedReader(new FileReader(filePath));
